@@ -1,0 +1,65 @@
+body{background:#EDE8D5}.header{display:none}#Copyright{width:62%;background:#faf7ed}.left,.main_nav,.fenge,.site-search{-webkit-transition:all 200ms linear;-moz-transition:all 200ms linear;-ms-transition:all 200ms linear;-o-transition:all 200ms linear;transition:all 200ms linear}.center{position:relative;width:62%;height:100%;overflow:hidden;margin:auto;background-color:#faf7ed;box-shadow:-7px 0 7px -7px rgba(51,51,51,.07),7px 0 7px -7px rgba(51,51,51,.07)}.right{position:fixed;top:100px;left:50%;margin-left:33%}.right ul{}.right li{display:block;line-height:40px;height:45px}.right a{width:40px;height:40px;line-height:37px;font-size:14px;color:#928E80;text-align:center;float:left}.right a:hover,.mulu.open{color:#61B864}.right a em{font-size:12px}.right a i{font-size:28px;margin-top:7px;color:#B8B4A5}.right li span{margin-left:16px;font-size:16px;float:left;display:none}.right li:hover span{display:block}.left{position:fixed;top:0;padding-top:40px;z-index:3;left:0;margin-left:3%;height:100%;width:13%;font-size:12px;text-align:left;background-color:#ede8d5}.about{float:left;width:100%;margin-left:0}.aboutme,.about_me,.qrcode{background-color:#ede8d5}.tit{position:fixed;left:0;padding:0;width:100%;z-index:6}.h1{width:62%;margin:0 auto;position:relative;height:50px;line-height:50px;background-color:#faf7ed;border-bottom:1px solid #ED6C00}.author{position:absolute;top:2px;right:11%;color:#b2afa1}.author span{margin:0 5px}.author time{margin-left:10px}.h1 h1{font-size:16px;font-weight:100;padding-left:10%}#textinfo{padding:80px 10%;font-size:18px}#textinfo p{line-height:2;margin:23px 0;text-indent:2em;color:#222}#textinfo h3{color:#938953;font-size:30px;margin-top:40px;margin-bottom:40px;font-weight:100;background-image:url("../images/bdjson_28986fa0.png"/*tpa=http://www.moyublog.com/skin/moyublog/images/bdjson_28986fa0.png*/);background-repeat:no-repeat;padding-top:60px}#textinfo img{max-width:100%;height:auto;}.main_nav{padding-top:4%;position:absolute;right:0;width:0;z-index:7;background:#eee;box-shadow:1px 0 4px 0 rgba(51,51,51,.07) inset;background-color:#e0dcca;height:100%}.main_nav.open{width: 30%;right: 318px;position: fixed;top: 0px;}.main_nav li{width:94%;float:right}.main_nav li a{display:block;height:50px;line-height:50px;cursor:pointer;text-decoration:none;border-bottom:1px #b4b4b3 dashed;font-size:20px;color:#333;padding-left:2%;letter-spacing:2px}.main_nav li a i{margin-right:18px;color:#b3b1aa}.fenge{position:fixed;top:0;left:13.5%;width:32px;height:100%;background:url("../images/bg_7bcc7fe8.png"/*tpa=http://www.moyublog.com/skin/moyublog/images/bg_7bcc7fe8.png*/) no-repeat 0px 0px;z-index:4}.menubtn{position:absolute;right:-13px;top:50%;margin-top:-40px;background:#B8B4A5;width:13px;height:36px;text-align:center;border-radius:0 50px 50px 0;cursor:pointer}.menubtn i{line-height:36px;color:#fff;font-size:12px;text-indent:-2px}.outread{display:block;height:40px;font-size:15px;line-height:40px;position:fixed;z-index:6;top:0;left:3%}.outread a{color:#93a1a1}.outread em{margin:0 13px;color:#B8B4A5;font-size:12px;vertical-align:top;display:inline-block}.outread i{color:#B8B4A5;font-size:20px;vertical-align:text-top;margin-right:6px}.aboutme{padding:6% 0}.aboutme span{margin-left:0;font-weight:100;margin-top:6px;display:block}.aboutme img{float:none;width:56%;box-shadow:none;margin:0;display:block}.aboutme p{margin-left:0;width:76%}.about_me{padding:6% 0}.contact{padding:1% 0 6% 0}.weixin,.timeline,.phone{width:29%;text-align:left}.weixin a i,.timeline a i,.phone a i{padding:0 13%;height:38px;line-height:38px;font-size:22px;color:#EDE8D5}.timeline a i{padding:0 19%}.phone a i{font-size:33px;padding:0 24%}.qrcode{padding:8% 0}.qrcode img{width:72%;display:block}.qrcode p{margin-top:5%;color:#A6978A}.left.close{left:-16%}.fenge.close{left:0}#textinfo.big{font-size:20px}#textinfo.small{font-size:16px}#textinfo.songti{font-family:"宋体";font-size:17px}#textinfo ol {
+list-style: decimal-leading-zero;
+margin-left: 4em;
+font-family: Arial;
+}#textinfo ol li {
+list-style-type: decimal-leading-zero;
+}#textinfo ol li p {
+text-indent: 0;font-family: 楷体, 楷体_gb2312, simkai;
+}.zt a{font-size:12px;background:#E0DCCA}.h1 .sbtn{position:absolute;top:16px;cursor:pointer;font-size:20px;right:20px;color:#D9D5C3}.site-search{position:fixed;left:0;padding:0;width:100%;z-index:5}.top{background-color:#F3F0E4;position:relative;top:0;width:62%;margin:0 auto;left:0;right:0;height:100px;z-index:1;border-bottom:1px solid #FFFFFF}.site-search-form{padding:25px 10%;overflow:hidden}.search-input{float:left;color:#999;border:solid 1px #ddd;width:86%;height:40px;padding:4px 0;border-right:none;font-size:16px;border-radius:2px 0 0 2px;outline:none;text-indent:2%}.search-btn{color:#fff;border:none;background:#D1CDBA;height:50px;font-size:16px;padding:0 12px;border-radius:0 2px 2px 0;width:10%;display:inline-block}.site-search.open{top:51px}.fava a{padding:10px 5%}.titlepic {
+display: none;
+}
+.yincang{position: fixed;top: 40px;left: 56px;width:12.5%;}
+.yincang li{line-height: 20px;}
+.yincang li a{padding:10px 15px 10px 0px;border-bottom:solid 1px #eee;border-left:3px solid transparent;margin-left:-3px;overflow:hidden;position:relative;display:block;font-size:14px}
+.yincang li a:hover{background-color:#FAF7ED;border-left-color:#B8B4A5}
+.yincang .text{margin-top:5px;display:block}
+.yincang .thumbnail{float:left;margin-left:-90px}
+.yincang .thumbnail img{max-width:80px;max-height:49px}
+.yincang .muted{margin-right:20px;font-size:12px}
+.yincang .nopic li a{padding: 8px 15px;}
+.yincang .nopic .text{margin-top:0;}
+.yincang .muted {margin-right: 20px;font-size: 12px;color: #999999;}
+@media (max-width:1000px){.left,.outread,.fenge,.right{display:none}.center,.h1,.top{width:90%}.yincang{ display:none;}}@media (max-width:600px){.h1 .sbtn{display:none}.header{display:block;}.tit{display:none}.center,.h1{width:95%}.h1 {
+border-bottom: none;
+height: auto;background: none;line-height: 30px;
+}.h1 h1{padding-left:3%;font-size:18px;margin:18px auto 0;height:80px;line-height:26px}.author{color:rgba(255, 255, 255, 0.6);position: static;}#textinfo{padding:5px 5%;font-size:15px}#textinfo p{line-height:1.8;margin:20px 0;text-indent:0}#Copyright{width:100%;border-top:1px solid #E4DED8}.fava a{padding:10px 25%}#textinfo h3{font-size:18px;margin:20px 0;padding-top:40px;background-size:100% auto}
+.hconly_ad{display:none}
+body {
+padding-top:45px;
+}.titlepic {
+width: 100%;
+display: block;
+height: auto;
+position: relative;margin-bottom: 10px;
+}.titlepic img{width:100%;height:100%}.tit2 {
+position: absolute;
+bottom: 10%;
+width: 100%;
+}.tit2 .h1 h2{color: #fff;
+font-weight: 100;
+font-size: 26px;}.pbg {
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background: -webkit-gradient(linear,0 0,0 100%,from(rgba(255, 255, 255, 0)),to(rgba(0, 0, 0, 0.6)));
+}
+}@media (max-width:600px){.moon .center{background-color:rgba(0, 0, 0, 0.2)}.moon .h1 h1{color:rgba(255, 255, 255, 0.8)}.moon .author{color:rgba(255, 255, 255, 0.4)}.moon #textinfo p{color:rgba(255, 255, 255, 0.6)}.moon #Copyright{background-color:#0D3649} .yincang{ display:none;}}
+
+.video {
+position: relative;
+padding-bottom: 56.25%;
+height: 0;
+overflow: hidden;
+}
+.video iframe,
+.video object,
+.video embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}

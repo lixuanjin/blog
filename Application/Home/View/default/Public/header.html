@@ -1,0 +1,68 @@
+<header class="header">
+  <div class="m-sitenav">
+    <div class="wrap">
+      <ul class="total">
+        <li><a class="top-btn1" href="site_misc/grant/index.htm" title="域名认证"  target="_blank">域名认证</a></li>
+        <li>作品：<i>69</i>个</li>
+        <li>记录：<i>90</i>篇<em>|</em></li>
+        <li>随笔：<i>28</i>篇<em>|</em></li>
+        <li>资源：<i>69</i>个<em>|</em></li>
+        <!--<li>评论：<i><span class="ds-thread-count" data-thread-key="moyublog" data-count-type="comments"></span></i>条<em>|</em></li>-->
+        <li>总访问量：<i>41047</i>次<em>|</em></li>
+      </ul>
+      <ul class="m-login" id="clickmenubotton">
+        <script src="e/member/login/loginjs.php"></script>
+      </ul>
+    </div>
+  </div>
+  <div class="inner">
+    <hgroup>
+      <h1 class="logo"><a href="{:U('Home/Index/index')}" title="李炫进"><i>x</i>
+        李炫进       </a></h1>
+    </hgroup>
+    <?php
+      $icoArr = array('home','gzs','books','essay','resource','kubao','kubao');
+    ?>
+    <div class="nav">
+      <nav>
+        <ul id="main_nav">
+          <volist name=":getMenuList()" id='vo'>
+
+            <li class="{$icoArr[$key]}"><a href="{:U($vo['url'])}" >{$vo.title}</a></li>
+          </volist>
+
+        </ul>
+      </nav>
+      <div id="search">
+        <form action="http://www.moyublog.com/e/search/index.php" method="post" name="searchform" id="searchform">
+          <input name="keyboard" type="text" id="keyboard" value="" placeholder="请输入关键词..." />
+          <input type="hidden" name="show" value="title,smalltext" />
+          <input type="hidden" name="tempid" value="1" />
+          <input type="hidden" name="classid" value="2,3" />
+          <button id="search-submit" type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <a href="javascript:;" class="mso"><i class="fa fa-search sch"></i></a> 
+ </header>
+<script type="text/javascript">
+  $().ready(function(){
+    $("#clickmenubotton li span").hover(
+      function(){
+        $(this).addClass("bgmenuhove2");
+        $(this).parent().find("ul.subnav").slideDown('fast').show();
+        $(this).parent().hover(function(){},function(){
+          $(this).parent().find("ul.subnav").fadeOut('fast');$(this).parent().find("span").removeClass("bgmenuhove2")
+        })
+      })
+  });
+</script> 
+<script>
+$(document).ready(function(){
+  $(".sch").click(function(){  
+    $("#search").toggleClass("open");
+    $(".sch").toggleClass("fa-remove");
+  });
+ });
+</script>

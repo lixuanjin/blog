@@ -1,0 +1,321 @@
+<extend name="Base/common" />
+<block name="style">
+    <link href="__CSS__/textnew.css" rel="stylesheet" type="text/css" />
+    <script type="__JS__/ajax.js"></script>
+    <script>
+	    $(document).ready(function(){
+	    	$(".mulu").click(function(){
+	    		$(".main_nav,.mulu").toggleClass("open")
+	    	})
+		  	$(".sbtn").click(function(){  
+		    	$(".site-search").toggleClass("open");
+				$(".sbtn").toggleClass("fa-remove");
+		  	});
+		  	$(".menubtn").click(function(){
+		    	$(".left").toggleClass("close");
+				$(".fenge").toggleClass("close");
+				$(".menujt").toggleClass("fa-caret-right");
+		  	}); 
+		});
+	</script>
+</block>
+<block name="body">
+    <script language="javascript">
+        function setfont(size) {
+            var obj;
+            obj = document.getElementById("textinfo");
+            obj.className = size;
+        }
+    </script>
+    <div class="titlepic">
+        
+        <div class="pbg">
+        </div>
+        <div class="tit2">
+            <div class="h1">
+                <h2>
+                    {$info.title}
+                </h2>
+                <p class="author">
+                    作者/
+                    <span>
+                        {$info.uid|get_username}
+                    </span>
+                    <time>
+                        {$info.create_time|date='Y-m-d H:i',###}
+                    </time>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="text clear">
+        <div class="center">
+            <ul class="main_nav">
+            	<volist name=":getMenuList()" id="vo">
+                <li>
+                    <a href="{:U('Home/Index/index')}">
+                        <i class="fa fa-home">
+                        </i>
+                        首页
+                    </a>
+                </li>
+            	</volist>
+            </ul>
+            <div class="textmain">
+                <div style="display:none">
+                   
+                </div>
+                <div class="tit">
+                    <div class="h1">
+                        <h1>
+                            <a href="291.html">
+                                {$info.title}
+                            </a>
+                        </h1>
+                        <p class="author">
+                            作者/
+                            <span>
+                                {$info.uid|get_username}
+                            </span>
+                            <time>
+                                {$info.create_time|date='Y-m-d H:i',###}
+                            </time>
+                        </p>
+                        <i class="fa fa-search sbtn">
+                        </i>
+                    </div>
+                </div>
+                <div id="textinfo">
+                    {$info.content}
+                    <div class="fava clear"> 
+                        <a href="JavaScript:void(0);" class="diggit">
+                            <i class="fa fa-thumbs-o-up"></i>感觉不错，赞哦！ <em>(<span id="diggnum">
+                            <script type="text/javascript" src="../e/public/ViewClick/-classid=3&id=291&down=5"></script></span>)</em>
+                        </a> 
+                    </div>
+                    <div class="bdsharebuttonbox">
+                        <a href="#" class="bds_more" data-cmd="more"> </a>
+                        <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                        <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+                        <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+                        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                    </div>
+                    <script>
+                    window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                    </script>
+                    <div class="fava clear">
+                        {:hook('documentDetailAfter',$info)}
+                    </div>
+                    <div id="pl">
+                        <!--Duoshuo Comment BEGIN-->
+                        <div class="ds-thread" data-category="3" data-thread-key="3-291" data-title="新浪微博是怎样花样作死的？"
+                        data-author-key="" data-url="http://www.moyublog.com/essay/291.html">
+                        </div>
+                        <!--Duoshuo Comment END-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="left">
+            <figure class="about">
+                <div class="aboutme clear">
+                    <img src="__IMG__/me.jpg">
+                    <span>
+                        关于墨鱼
+                    </span>
+                    <p>
+                        31岁，山东滕州人，职业网络经理人、前端设计师。爱读书爱设计爱思考...
+                        <a href="#" title="没专门写自我介绍，暂且用这篇顶一下" rel="nofollow">
+                            [更多]
+                        </a>
+                    </p>
+                </div>
+                <div class="about_me">
+                    <dl class="clear">
+                        <dd class=" contact">
+                            <strong>
+                                E-mail：
+                            </strong>
+                            48444431@qq.com
+                            <br>
+                            <strong>
+                                QQ：
+                            </strong>
+                            48444431
+                        </dd>
+                        <dd class="weixin">
+                            <a href="../zt/weixin/index.htm" title="添加微信，来聊天" target="_blank" rel="nofollow">
+                                <i class="fa fa-wechat">
+                                </i>
+                            </a>
+                        </dd>
+                        <dd class="timeline">
+                            <a href="../zt/timeline/index.htm" title="墨鱼部落格，始于2007年11月02日" target="_blank" rel="nofollow">
+                                <i class="fa fa-clock-o">
+                                </i>
+                            </a>
+                        </dd>
+                        <dd class="phone">
+                            <a href="http://weibo.com/lixuanjin/" title="手机联系" target="_blank"> 
+                                <i class="fa fa-mobile">
+                                </i>
+                            </a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="qrcode">
+                    <img src="__IMG__/weixinapi.png"  alt="用手机阅读《新浪微博是怎样花样作死的？》" />
+                    <p>
+                        扫描用手机阅读此文
+                        <br />
+                        支持Android/iPhone
+                    </p>
+                </div>
+            </figure>
+        </div>
+        <div class="right">
+            <ul>
+                <li>
+                    <a href="javascript:;">
+                        <i class="fa fa-bars mulu">
+                        </i>
+                    </a>
+                    <span>
+                        目录
+                    </span>
+                </li>
+                <li>
+                    <a href="../e/member/fava/add/-classid=3&id=291.htm">
+                        <i class="fa fa-bookmark-o">
+                        </i>
+                    </a>
+                    <span>
+                        加入收藏( 0)
+                    </span>
+                </li>
+                <li>
+                    <a href="#pl">
+                        <i class="fa fa-edit">
+                        </i>
+                    </a>
+                    <span>
+                        写评论
+                    </span>
+                </li>
+                <li>
+                    <a href="291.html#fx">
+                        <i class="fa fa-share-alt">
+                        </i>
+                    </a>
+                    <span>
+                        分享此文
+                    </span>
+                </li>
+                <li class="fontsize">
+                    <a href="javascript:;" onclick="javascript:setfont('big')">
+                        字
+                        <em>
+                            [大]
+                        </em>
+                    </a>
+                    <span>
+                        字体放大
+                    </span>
+                </li>
+                <li class="fontsize">
+                    <a href="javascript:;" onclick="javascript:setfont('middle');">
+                        字
+                        <em>
+                            [中]
+                        </em>
+                    </a>
+                    <span>
+                        字体适中
+                    </span>
+                </li>
+                <li class="fontsize">
+                    <a href="javascript:;" onclick="javascript:setfont 
+                    ('small');">
+                        字
+                        <em>
+                            [小]
+                        </em>
+                    </a>
+                    <span>
+                        字体缩小
+                    </span>
+                </li>
+                <li class="fontsize zt">
+                    <a href="javascript:;" onclick="javascript:setfont 
+                    ('songti');">
+                        宋体
+                    </a>
+                    <span>
+                        使用“宋体”
+                    </span>
+                </li>
+                <li class="fontsize zt">
+                    <a href="javascript:;" onclick="javascript:setfont 
+                    ('yahei');">
+                        雅黑
+                    </a>
+                    <span>
+                        使用“雅黑体”
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="fenge">
+            <div class="menubtn">
+                <i class="fa fa-caret-left menujt">
+                </i>
+            </div>
+        </div>
+        <div class="outread">
+            <a href="{:U('Article/lists',array('category'=>$category['name']))}">
+                <i class="fa fa-chevron-circle-left">
+                </i>
+                退出阅读
+            </a>
+            <em>
+                |
+            </em>
+            <a href="{:U('Home/Index/index')}">
+                首页
+            </a>
+        </div>
+        <div class="site-search">
+            <div class="top clearfix">
+                <form method="post" class="site-search-form" action="http://www.moyublog.com/e/search/index.php" name="searchform">
+                    <input class="search-input" name="keyboard" id="keyboard" type="text"
+                    placeholder="输入关键词搜索..." />
+                    <input type="hidden" name="show" value="title,smalltext" />
+                    <input type="hidden" name="tempid" value="1" />
+                    <input type="hidden" name="classid" value="1,2,3" />
+                    <button class="search-btn" type="submit">
+                        <i class="fa fa-search">
+                        </i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="yincang">
+            <ul>
+                <li>
+                    <a href="291.html">
+                        <span class="text">
+                            新浪微博是怎样花样作死的？
+                        </span>
+                        <span class="muted">
+                            2015-06-23
+                        </span>
+                        <span class="muted">
+                            109浏览
+                        </span>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+</block>
